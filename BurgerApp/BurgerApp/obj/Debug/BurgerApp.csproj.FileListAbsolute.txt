@@ -1,0 +1,7 @@
+C:\Users\Nariman\Source\repos\BurgerApp\BurgerApp\bin\Debug\BurgerApp.exe.config
+C:\Users\Nariman\Source\repos\BurgerApp\BurgerApp\bin\Debug\BurgerApp.exe
+C:\Users\Nariman\Source\repos\BurgerApp\BurgerApp\bin\Debug\BurgerApp.pdb
+C:\Users\Nariman\Source\repos\BurgerApp\BurgerApp\obj\Debug\BurgerApp.csprojAssemblyReference.cache
+C:\Users\Nariman\Source\repos\BurgerApp\BurgerApp\obj\Debug\BurgerApp.csproj.CoreCompileInputs.cache
+C:\Users\Nariman\Source\repos\BurgerApp\BurgerApp\obj\Debug\BurgerApp.exe
+C:\Users\Nariman\Source\repos\BurgerApp\BurgerApp\obj\Debug\BurgerApp.pdb
