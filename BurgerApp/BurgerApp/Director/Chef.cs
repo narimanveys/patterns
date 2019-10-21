@@ -4,9 +4,9 @@ namespace BurgerApp.Director
 {
     internal class Chef
     {
-        Recipe recipe;
+        IRecipe recipe;
 
-        public Chef(Recipe recipe)
+        public Chef(IRecipe recipe)
         {
             this.recipe = recipe;
         }

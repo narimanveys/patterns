@@ -3,30 +3,33 @@ using BurgerApp.Product;
 
 namespace BurgerApp.Builder
 {
-    class CheeseburgerRecipe : Recipe
+    class CheeseburgerRecipe : IRecipe<Cheeseburger>
     {
         Cheeseburger cheese = new Cheeseburger();
 
-        public Cheeseburger GetResult()
+        public Cheeseburger Build()
         {
             return cheese;
         }
 
-        public override void GetBunBase()
+        public IRecipe<Cheeseburger> GetBunBase()
         {
             cheese.AddLayer("cheeseburger base layer");
+            return this;
         }
 
-        public override void GetFilling()
+        public IRecipe<Cheeseburger> GetFilling()
         {
             cheese.AddLayer("cheese!!!!");
             cheese.AddLayer("cutlet!!!!");
             cheese.AddLayer("cheese!!!!");
+            return this;
         }
 
-        public override void GetBunTop()
+        public IRecipe<Cheeseburger> GetBunTop()
         {
             cheese.AddLayer("cheeseburger top layer");
+            return this;
         }
     }
 }
