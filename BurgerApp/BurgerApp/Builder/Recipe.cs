@@ -1,9 +1,10 @@
 ﻿namespace BurgerApp.Builder
 {
-    internal abstract class Recipe
+    internal interface IRecipe<T>
     {
-        public abstract void GetBunBase();
-        public abstract void GetBunTop();
-        public abstract void GetFilling();
+        IRecipe<T> GetBunBase();
+        IRecipe<T> GetBunTop();
+        IRecipe<T> GetFilling();
+        T Build();
     }
 }

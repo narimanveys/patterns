@@ -41,10 +41,12 @@ namespace BurgerApp
         {
             CheeseburgerRecipe burgerRecipe = new CheeseburgerRecipe();
 
-            Chef chef = new Chef(burgerRecipe);
-            chef.Gather();
+            burgerRecipe
+                .GetBunBase()
+                .GetFilling()
+                .GetBunTop();
 
-            Cheeseburger burger = burgerRecipe.GetResult();
+            Cheeseburger burger = burgerRecipe.Build();
             burger.GiveAway();
         }
 
