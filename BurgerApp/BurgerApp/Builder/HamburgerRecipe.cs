@@ -3,7 +3,7 @@ using BurgerApp.Product;
 
 namespace BurgerApp.Builder
 {
-    class HamburgerRecipe : Recipe
+    class HamburgerRecipe : IRecipe
     {
         Hamburger hamburger = new Hamburger();
 
