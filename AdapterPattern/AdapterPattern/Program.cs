@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdapterPattern
 {
@@ -10,10 +6,23 @@ namespace AdapterPattern
     {
         static void Main(string[] args)
         {
+            /*both sides*/
             ITurkey turkey = new TurkeyDuckAdapter();
             turkey.Fly();
-            Console.ReadKey();
+            
 
+            /*Turkey to duck*/
+
+
+            Turkey turkeyy = new Turkey();
+
+            IDuck turkeyAdapter = new TurkeyAdapter(turkeyy);
+            Console.WriteLine("----------------------------------");
+            turkeyAdapter.Fly();
+            turkeyAdapter.Quack();
+
+
+            Console.ReadKey();
         }
     }
 }

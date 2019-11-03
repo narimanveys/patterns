@@ -49,6 +49,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Turkey.cs" />
+    <Compile Include="TurkeyAdapter.cs" />
     <Compile Include="TurkeyDuckAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
