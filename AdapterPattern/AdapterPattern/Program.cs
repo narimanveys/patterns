@@ -9,6 +9,7 @@ namespace AdapterPattern
             /*both sides*/
             ITurkey turkey = new TurkeyDuckAdapter();
             turkey.Fly();
+            turkey.Gobble();
             
 
             /*Turkey to duck*/

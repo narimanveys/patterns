@@ -4,20 +4,20 @@
     {
         dynamic adaptee = null;
 
-        public void Gobble()
-        {
-            if (this.adaptee == null)
-                this.adaptee = new Turkey();
-
-            adaptee.Gobble();
-        }
-
-        public void Quack()
+        void ITurkey.Gobble()
         {
             if (this.adaptee == null)
                 this.adaptee = new Duck();
 
             adaptee.Quack();
+        }
+
+        void IDuck.Quack()
+        {
+            if (this.adaptee == null)
+                this.adaptee = new Turkey();
+
+            adaptee.Gobble();
         }
 
         void IDuck.Fly()

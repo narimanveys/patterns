@@ -11,7 +11,7 @@ namespace AdapterPattern
 
         public void Fly()
         {
-            Console.WriteLine("Duck quacks");
+            Console.WriteLine("Duck flies");
         }
     }
 }
