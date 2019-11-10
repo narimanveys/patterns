@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BigPortion.cs" />
     <Compile Include="CondimentDecorator.cs" />
+    <Compile Include="DoublePortion.cs" />
     <Compile Include="Espresso.cs" />
     <Compile Include="HotChocolate.cs" />
     <Compile Include="IBeverage.cs" />
@@ -51,6 +53,7 @@
     <Compile Include="Marshmallow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SizeDecorator.cs" />
     <Compile Include="WhippedCream.cs" />
   </ItemGroup>
   <ItemGroup>

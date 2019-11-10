@@ -7,7 +7,7 @@
         protected string _name = "undefined";
         protected double _price = 0.0;
 
-        public CondimentDecorator(IBeverage beverage)
+        protected CondimentDecorator(IBeverage beverage)
         {
             _beverage = beverage;
         }
