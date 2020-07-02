@@ -2,22 +2,32 @@
 {
     public class RemoteControl
     {
-        ICommand command;
-
+        ICommand commandLight;
+        ICommand commandGarage;
+        private bool isOn = false;
         public RemoteControl() { }
 
-        public void SetCommand(ICommand com)
+        public void SetCommand(ICommand lightcom, ICommand garagecom)
         {
-            command = com;
+            commandLight = lightcom;
+            commandGarage = garagecom;
         }
 
         public void PushButton()
         {
-            command.Execute();
-        }
-        public void PushUndo()
-        {
-            command.Undo();
+            if (!isOn)
+            {
+                commandLight.Execute();
+                commandGarage.Execute();
+                isOn = true;
+            }
+            else
+            {
+                commandLight.Undo();
+                commandGarage.Undo();
+                isOn = false;
+            }
+
         }
     }
 }

@@ -10,10 +10,8 @@ namespace AdapterPattern
             ITurkey turkey = new TurkeyDuckAdapter();
             turkey.Fly();
             turkey.Gobble();
-            
 
             /*Turkey to duck*/
-
 
             Turkey turkeyy = new Turkey();
 
@@ -21,8 +19,6 @@ namespace AdapterPattern
             Console.WriteLine("----------------------------------");
             turkeyAdapter.Fly();
             turkeyAdapter.Quack();
-
-
             Console.ReadKey();
         }
     }

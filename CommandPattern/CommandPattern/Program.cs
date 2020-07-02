@@ -8,14 +8,12 @@ namespace CommandPattern
         {
             var remoteControl = new RemoteControl();
             var light = new Light();
-            remoteControl.SetCommand(new LightCommand(light));
-            remoteControl.PushButton();
-            remoteControl.PushUndo();
-
             var garageGate = new GarageGate();
-            remoteControl.SetCommand(new GarageGateCommand(garageGate));
+            remoteControl.SetCommand(new LightCommand(light), new GarageGateCommand(garageGate));
             remoteControl.PushButton();
-            remoteControl.PushUndo();
+            remoteControl.PushButton();
+
+
             Console.Read();
         }
     }
